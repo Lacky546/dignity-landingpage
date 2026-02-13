@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dignity Zero | Deine Daten gehören dir</title>
+    <title>Dignity Zero | Effizienz trifft Würde</title>
     <style>
-        body { font-family: sans-serif; background: #0f172a; color: white; display: flex; align-items: center; justify-content: center; height: 100vh; margin: 0; text-align: center; }
-        .container { max-width: 600px; padding: 20px; }
-        h1 { font-size: 3rem; margin-bottom: 10px; letter-spacing: -1px; }
-        p { font-size: 1.2rem; color: #94a3b8; line-height: 1.6; }
-        .badge { background: #38bdf8; color: #0f172a; padding: 5px 12px; border-radius: 20px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
-        .footer { margin-top: 40px; font-size: 0.8rem; color: #475569; }
-        a { color: #38bdf8; text-decoration: none; }
+        :root { --primary: #38bdf8; --bg: #0f172a; --text: #f1f5f9; }
+        body { font-family: 'Inter', -apple-system, sans-serif; background: var(--bg); color: var(--text); margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; line-height: 1.5; }
+        .container { max-width: 800px; padding: 40px 20px; text-align: center; }
+        .badge { background: rgba(56, 189, 248, 0.1); color: var(--primary); padding: 6px 16px; border-radius: 99px; font-size: 0.85rem; font-weight: 600; border: 1px solid rgba(56, 189, 248, 0.3); margin-bottom: 24px; display: inline-block; }
+        h1 { font-size: 3.5rem; font-weight: 800; margin: 0; letter-spacing: -0.05em; background: linear-gradient(to right, #fff, #94a3b8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .tagline { font-size: 1.5rem; color: var(--primary); margin: 10px 0 30px; font-weight: 300; }
+        p { font-size: 1.25rem; color: #94a3b8; max-width: 600px; margin: 0 auto 40px; }
+        .features { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; text-align: left; margin-top: 40px; }
+        .feature-card { padding: 20px; background: rgba(255,255,255,0.03); border-radius: 12px; border: 1px solid rgba(255,255,255,0.05); }
+        .feature-card h3 { color: #fff; margin-top: 0; font-size: 1.1rem; }
+        .feature-card p { font-size: 0.95rem; margin-bottom: 0; }
+        .footer { margin-top: 60px; font-size: 0.85rem; }
+        .footer a { color: #475569; text-decoration: none; margin: 0 10px; transition: color 0.3s; }
+        .footer a:hover { color: var(--primary); }
     </style>
 </head>
 <body>
     <div class="container">
-        <span class="badge">Marke angemeldet</span>
-        <h1>DIGNITY ZERO</h1>
-        <p>Der digitale Schutzschild für deine Identität. Wir anonymisieren deinen Datenstrom und schützen dich vor KI-Tracking. </p>
-        <p><strong>Coming Soon 2026</strong></p>
+        <span class="badge">Marke angemeldet · 2026</span>
+        <h1>Dignity Zero</h1>
+        <div class="tagline">Wo Effizienz auf Würde trifft.</div>
+        
+        <p>
+            Wir definieren die Interaktion im Internet neu. Privatsphäre ist für uns kein Hindernis, sondern die Basis für digitales Vertrauen und maximale Performance.
+        </p>
+
+        <div class="features">
+            <div class="feature-card">
+                <h3>Radikale Effizienz</h3>
+                <p>Schnellerer Workflow durch intelligente Datenfilterung, ohne deine Identität zu opfern.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Digitale Würde</h3>
+                <p>Dein Recht auf Anonymität ist unantastbar. Wir schützen deine Daten vor KI-Mining und Profiling.</p>
+            </div>
+        </div>
         
         <div class="footer">
-            <a href="impressum.html">Impressum</a> | <a href="datenschutz.html">Datenschutz</a>
+            <a href="impressum.html">Impressum</a>
+            <a href="datenschutz.html">Datenschutz</a>
         </div>
     </div>
 </body>
